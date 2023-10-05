@@ -20,3 +20,13 @@ git commit -am -->para no dar add a los archivos que ya se encontraban agregados
 git show --> muestra los ultimos cambios realizados.
 git branch --> crea una nueva rama.
 git checkout nombreRama --> cambia directorio entre ramas.
+ssh-keygen -t rsa -b 4096 -C "esteban_manzo@outlook.es"
+eval $(ssh-agent -s) --> Valida que el agente SSH esté corriendo*
+ssh-add ~/.ssh/id_rsa --> Se agrega la llave
+git remote add origin https://github.com/esteban917/hyperblog.git -> Se agrega un origen remoto en repositorio en Github
+git push origin master -> Enviar al origen (Repositorio en github) todo lo que hay en la rama master
+git branch -m main --> rename branch principal
+git pull origin main --allow--unrelated-histories
+git remote set-url origin git@github.com:esteban917/hyperblog.git --> Se agrega repositorio SSH
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" a136d2c
+
