@@ -1,0 +1,22 @@
+git add archivo.extension --> añade un archivo a staging 
+git rm --cached archivo.extension --> borra al archivo de staging 
+git add . --> agrega todos los archivos en la carpeta actual a staging 
+git commit -m "mensaje" --> guarda los cambios una vez que se encuentran en staging 
+git log archivo.extension --> muestra los cambios hechos en un archivo 
+git log --stat --> muestra todos los cambios hechos en los archivos de la carpeta 
+git diff --> muestra cambios entre versiones
+git diff etiqueta1 etiqueta2 --> muestra los cambios entre una version y otra en especifico 
+git checkout etiquetalogstat archivo.extension --> despues de haber dado el comando
+git log --stat, se puede regresar a una version anterior de un archivo 
+git checkout master archivo.extension --> regresar a la ultima version del archivo 
+git reset etiqueta1 --hard-->regresa a una version de un archivo eliminando todos los cambios
+git reset etiqueta1 --soft --> regresa a una version de un archivo sin eliminar los cambios que se encuentran en RAM
+git clone url --> desde la direccion del repositorio remoto, crea una copia de master y crea la base de datos de todos los cambios históricos
+git push --> enviar cambios de master hacia repositorio remoto (necesita commit previamente) 
+git fetch --> trae una actualizacion de cambios desde el repositorio local 
+git merge --> fusiona las versiones del archivo
+git pull --> git fetch + git merge 
+git commit -am -->para no dar add a los archivos que ya se encontraban agregados anteriormente en una misma carpeta 
+git show --> muestra los ultimos cambios realizados.
+git branch --> crea una nueva rama.
+git checkout nombreRama --> cambia directorio entre ramas.
