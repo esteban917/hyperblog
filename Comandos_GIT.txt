@@ -28,5 +28,14 @@ git push origin master -> Enviar al origen (Repositorio en github) todo lo que h
 git branch -m main --> rename branch principal
 git pull origin main --allow--unrelated-histories
 git remote set-url origin git@github.com:esteban917/hyperblog.git --> Se agrega repositorio SSH
-git tag -a v0.1 -m "Resultado de las primeras clases del curso" a136d2c
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" a136d2c --> Se crea tag
+git tag --> Se ven los tags
+git log --all --graph --decorate --oneline --> Se ven gráfico de modificaciones y ramas
+git show-ref --tags --> Te muestran los tags relacionados alos hashs
+git push origin --tags --> Se suben al repositorio remoto los tags 
+git pull origin main --> Se obtiene lo del repositorio remoto, se hace antes del push (Buenas practicas) para tener todo actualizado
+git push origin :refs/tags/dormido --> Para borrar tag en repositorio remoto
+git show-branch --> Cambios a nivel de ramas
+git show-branch --all --> mas detallado
+
 
